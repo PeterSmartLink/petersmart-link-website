@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "Hero image for the homepage",
+      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
+      "imageHint": "tech background"
+    },
+    {
+      "id": "about-1",
+      "description": "Image for the about page, possibly of the founder",
+      "imageUrl": "https://picsum.photos/seed/about1/800/600",
+      "imageHint": "founder portrait"
+    },
+    {
+      "id": "blog-windows-install",
+      "description": "Blog post image for Windows installation",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "computer screen"
+    },
+    {
+      "id": "blog-best-smartphones",
+      "description": "Blog post image for best smartphones",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "smartphones display"
+    },
+    {
+      "id": "blog-business-website",
+      "description": "Blog post image for business website importance",
+      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageHint": "website code"
+    },
+    {
+      "id": "services-hero",
+      "description": "Hero image for the services page",
+      "imageUrl": "https://picsum.photos/seed/services1/1920/600",
+      "imageHint": "tech workshop"
+    },
+    {
+      "id": "contact-hero",
+      "description": "Hero image for the contact page",
+      "imageUrl": "https://picsum.photos/seed/contact1/1920/600",
+      "imageHint": "contact us"
+    },
+    {
+      "id": "blog-hero",
+      "description": "Hero image for the main blog page",
+      "imageUrl": "https://picsum.photos/seed/bloghero/1920/600",
+      "imageHint": "person writing"
+    }
+  ]
 }
