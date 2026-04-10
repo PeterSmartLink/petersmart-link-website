@@ -1,5 +1,5 @@
 import type { NavLink, Service, Testimonial, BlogPost, FaqItem } from './types'
-import { Github, Twitter, Linkedin } from 'lucide-react'
+import { Github, Twitter, Youtube } from 'lucide-react'
 
 export const SITE_CONFIG = {
   name: 'PeterSmart Link',
@@ -35,9 +35,9 @@ export const NAV_LINKS: NavLink[] = [
 ]
 
 export const SOCIAL_LINKS = [
-  { name: 'GitHub', url: '#', icon: Github },
-  { name: 'Twitter', url: '#', icon: Twitter },
-  { name: 'LinkedIn', url: '#', icon: Linkedin },
+  { name: 'GitHub', url: 'https://github.com/PeterSmartLink', icon: Github },
+  { name: 'Twitter', url: 'https://twitter.com/PeterSmartLink', icon: Twitter },
+  { name: 'YouTube', url: 'https://youtube.com/@PeterSmartLink', icon: Youtube },
 ] as const
 
 export const services: Service[] = [
