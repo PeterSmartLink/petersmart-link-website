@@ -16,6 +16,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { SITE_CONFIG, testimonials, services, blogPosts } from '@/lib/constants'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
+import { BackgroundLogo } from '@/components/background-logo'
 
 const serviceIcons: { [key: string]: React.ElementType } = {
   'Computer Services': Laptop,
@@ -36,7 +37,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[80vh] w-full">
+      <section className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -49,6 +50,7 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+          <BackgroundLogo className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-3/4 w-3/4 max-h-96 max-w-96 opacity-10" />
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {SITE_CONFIG.name}
           </h1>
