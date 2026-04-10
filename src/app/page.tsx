@@ -47,7 +47,7 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {SITE_CONFIG.name}
@@ -84,9 +84,7 @@ export default function Home() {
                 <Card key={service.title} className="flex flex-col">
                   <CardHeader>
                     <div className="mb-4 flex items-center gap-4">
-                      <div className="bg-primary text-primary-foreground p-3 rounded-full">
-                        <Icon className="h-6 w-6" />
-                      </div>
+                      <Icon className="h-8 w-8 text-primary" />
                       <CardTitle className="font-headline text-xl">
                         {service.title}
                       </CardTitle>

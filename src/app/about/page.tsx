@@ -80,9 +80,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-3">
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-fit rounded-full bg-primary p-4 text-primary-foreground">
-                  <Heart className="h-8 w-8" />
-                </div>
+                <Heart className="h-10 w-10 text-primary mx-auto" />
                 <CardTitle className="pt-4 font-headline text-2xl">
                   Our Passion
                 </CardTitle>
@@ -97,9 +95,7 @@ export default function AboutPage() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-fit rounded-full bg-primary p-4 text-primary-foreground">
-                  <Target className="h-8 w-8" />
-                </div>
+                <Target className="h-10 w-10 text-primary mx-auto" />
                 <CardTitle className="pt-4 font-headline text-2xl">
                   Our Mission
                 </CardTitle>
@@ -115,9 +111,7 @@ export default function AboutPage() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto w-fit rounded-full bg-primary p-4 text-primary-foreground">
-                  <Zap className="h-8 w-8" />
-                </div>
+                <Zap className="h-10 w-10 text-primary mx-auto" />
                 <CardTitle className="pt-4 font-headline text-2xl">
                   Our Vision
                 </CardTitle>
