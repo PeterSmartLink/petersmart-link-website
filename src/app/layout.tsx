@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/layout/site-header'
 import { SiteFooter } from '@/components/layout/site-footer'
 import { Toaster } from '@/components/ui/toaster'
 import { SITE_CONFIG } from '@/lib/constants'
+import { Chatbot } from '@/components/chatbot'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -54,6 +55,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <SiteFooter />
           <Toaster />
+          <Chatbot />
         </div>
       </body>
     </html>
