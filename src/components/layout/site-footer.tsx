@@ -83,9 +83,20 @@ export function SiteFooter() {
 
         <Separator className="my-8" />
 
-        <div className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All Rights
-          Reserved.
+        <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-muted-foreground sm:flex-row">
+          <p>
+            &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All Rights
+            Reserved.
+          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/terms" className="hover:text-foreground">
+              Terms of Service
+            </Link>
+            <Separator orientation="vertical" className="h-4" />
+            <Link href="/privacy" className="hover:text-foreground">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
