@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/layout/site-header'
 import { SiteFooter } from '@/components/layout/site-footer'
 import { Toaster } from '@/components/ui/toaster'
 import { WhatsAppButton } from '@/components/whatsapp-button'
+import { CallButton } from '@/components/call-button'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -55,6 +56,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <SiteFooter />
           <Toaster />
+          <CallButton />
           <WhatsAppButton />
         </div>
       </body>
