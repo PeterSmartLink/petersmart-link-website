@@ -37,6 +37,7 @@ Keep your answers brief and to the point.
 `;
 
   const { output } = await ai.generate({
+    model: 'gemini-1.5-flash-latest',
     prompt: prompt,
     history: [...history, { role: 'user', content: message }],
   });
