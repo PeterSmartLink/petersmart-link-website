@@ -24,3 +24,8 @@ export type BlogPost = {
   image: string
   content: string
 }
+
+export type FaqItem = {
+  question: string
+  answer: string
+}

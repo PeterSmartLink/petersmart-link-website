@@ -1,4 +1,4 @@
-import type { NavLink, Service, Testimonial, BlogPost } from './types'
+import type { NavLink, Service, Testimonial, BlogPost, FaqItem } from './types'
 import { Github, Twitter, Linkedin } from 'lucide-react'
 
 export const SITE_CONFIG = {
@@ -195,5 +195,28 @@ Compared to traditional marketing methods like print or radio, a website is a hi
 ## Conclusion
 Investing in a website is one of the best decisions you can make for your business. It's a powerful tool for growth, marketing, and building a strong brand. Contact PeterSmart Link today to get started!
 `,
+  },
+]
+
+export const faqs: FaqItem[] = [
+  {
+    question: 'What are your business hours?',
+    answer: 'We are open from Monday to Saturday, 9:00 AM to 6:00 PM. We are closed on Sundays and public holidays.',
+  },
+  {
+    question: 'Do you offer a warranty on your services?',
+    answer: 'Yes, we offer a 30-day warranty on all our repair services. For website and app development, we provide a 3-month period of support to fix any bugs or issues that may arise after launch.',
+  },
+  {
+    question: 'How long does it take to build a website?',
+    answer: 'A standard business website typically takes 2-4 weeks from start to finish, depending on the complexity and the content provided. E-commerce or custom projects may take longer.',
+  },
+  {
+    question: 'What payment methods do you accept?',
+    answer: 'We accept mobile money (MTN, Airtel), bank transfers, and cash payments at our office.',
+  },
+  {
+    question: 'Can you help me get a domain name and hosting?',
+    answer: 'Absolutely! We can manage the entire process for you, from registering the perfect domain name to setting up reliable hosting for your new website.',
   },
 ]

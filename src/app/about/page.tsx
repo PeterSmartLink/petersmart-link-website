@@ -5,8 +5,14 @@ import {
   Zap,
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { SITE_CONFIG } from '@/lib/constants'
+import { SITE_CONFIG, faqs } from '@/lib/constants'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 
 export const metadata = {
   title: 'About Us',
@@ -125,6 +131,33 @@ export default function AboutPage() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="section-py">
+        <div className="container mx-auto max-w-3xl px-4">
+          <div className="text-center">
+            <h2 className="font-headline text-3xl font-bold sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+              Have questions? We have answers. Here are some of the most common
+              inquiries we receive.
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="w-full mt-12">
+            {faqs.map((faq, index) => (
+              <AccordionItem value={`item-${index}`} key={index}>
+                <AccordionTrigger className="text-left text-lg font-semibold">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
     </>
