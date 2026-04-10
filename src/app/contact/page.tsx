@@ -4,6 +4,8 @@ import { ContactForm } from '@/components/contact-form'
 import { CONTACT_INFO } from '@/lib/constants'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Card } from '@/components/ui/card'
+import { CallButton } from '@/components/call-button'
+import { WhatsAppButton } from '@/components/whatsapp-button'
 
 export const metadata = {
   title: 'Contact Us',
@@ -105,6 +107,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <CallButton />
+      <WhatsAppButton />
     </>
   )
 }
