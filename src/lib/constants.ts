@@ -3,6 +3,7 @@ import { Github, Twitter, Linkedin } from 'lucide-react'
 
 export const SITE_CONFIG = {
   name: 'PeterSmart Link',
+  url: 'https://petersmartlink.com',
   description:
     'Your trusted tech partner in Uganda, offering electronics, software services, web development, and more.',
   tagline: 'Smart Tech Solutions for Everyday Needs',
