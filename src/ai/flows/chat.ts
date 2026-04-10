@@ -61,7 +61,6 @@ Keep your answers brief and to the point.
 `;
 
   const { output } = await ai.generate({
-    model: 'googleai/gemini-pro',
     prompt: prompt,
     history: [...history, { role: 'user', content: message }],
   });
